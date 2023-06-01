@@ -7,14 +7,14 @@ const port = env.PORT;
 
 // Instantiate Fastify with some config
 const server = Fastify({
-  logger: !env.LOG_PRETTY ? true : {
-    transport: {
+  logger: {
+    level: env.LOG_LEVEL,
+    transport: env.LOG_PRETTY ? {
       target: 'pino-pretty',
       options: {
-        translateTime: 'HH:MM:ss Z',
         ignore: 'pid,hostname',
       },
-    }
+    } : undefined
   },
 });
 

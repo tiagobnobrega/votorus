@@ -3,12 +3,8 @@
   "compilerOptions": {
     "outDir": "../../dist/out-tsc",
     "module": "commonjs",
-    "types": ["node"],
-//    "paths": {
-//      // app specific path rules
-//      "@features/*": ["apps/votorus-api/src/app/features/*"],
-//      // path entries from tsconfig.base.json should be pasted below
-//    }
+    "resolveJsonModule": true,
+    "types": ["node"]
   },
   "exclude": ["jest.config.ts", "src/**/*.spec.ts", "src/**/*.test.ts"],
   "include": ["src/**/*.ts"]
