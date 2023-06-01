@@ -4,18 +4,20 @@
   "license": "MIT",
   "scripts": {
     "qwik:serve": "yarn nx run votorus-qwik:serve",
-    "api:dev": "yarn nx run votorus-api:serve:development | pino-colada",
+    "api:dev": "yarn nx run votorus-api:serve:development",
     "api:dev:raw": "yarn nx run votorus-api:serve:development"
   },
   "private": true,
   "dependencies": {
     "@fastify/autoload": "~5.7.1",
     "@fastify/sensible": "~5.2.0",
+    "@t3-oss/env-core": "^0.4.0",
     "axios": "^1.0.0",
     "fastify": "~4.13.0",
     "fastify-plugin": "~4.5.0",
     "firebase": "^9.22.1",
     "global": "^4.4.0",
+    "pino-pretty": "^10.0.0",
     "tslib": "^2.3.0",
     "zod": "^3.21.4"
   },

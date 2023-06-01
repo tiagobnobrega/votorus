@@ -4,7 +4,7 @@ import {
   sendEmailVerification,
   updateProfile,
 } from 'firebase/auth';
-import { auth } from '@api/app/features/auth/firebase';
+import { auth } from '@api/src/app/features/auth/firebase';
 import z from 'zod';
 
 const registerBody = z.object({

@@ -1,7 +1,7 @@
 import * as path from 'path';
 import { FastifyInstance, FastifyRequest, FastifyReply } from 'fastify';
 import AutoLoad from '@fastify/autoload';
-import { globalErrorHandler } from '@api/app/shared/globalErrorHandler';
+import { globalErrorHandler } from '@api/src/app/shared/globalErrorHandler';
 
 /* eslint-disable-next-line */
 export interface AppOptions {}

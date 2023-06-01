@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@api/*": ["apps/votorus-api/src/*"]
+      "@api/*": ["apps/votorus-api/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]
